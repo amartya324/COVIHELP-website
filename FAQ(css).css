@@ -1,0 +1,36 @@
+#uvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-100;
+}
+body {
+   min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  font-family: 'poppins-bold', sans-serif !important;
+}
+.container {
+  width: 75%;
+  color: orange;
+}
+.bar {
+  border-radius: 12px;
+  background: white;
+  box-shadow: 5px 5px 10px #6d6d6d, -5px -5px 10px #939393;
+  padding: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.answer {
+  color: blue;
+  display: none;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: inset 5px 5px 10px #6d6d6d, inset -5px -5px 10px #939393;
+}

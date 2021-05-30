@@ -1,0 +1,383 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .main-container {
+        height: 83vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .main-container h2 {
+        margin: 0 0 50px 0;
+        color: #FF8000;
+        font-size: 30px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+      }
+
+      .radio-buttons {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .custom-radio input {
+        display: none;
+      }
+
+      .radio-btn {
+        margin: 10px;
+        width: 180px;
+        height: 200px;
+        border: 3px solid transparent;
+        display: inline-block;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        box-shadow: 0 0 20px #c3c3c367;
+        cursor: pointer;
+      }
+
+      .radio-btn > i {
+        color: #ffffff;
+        background-color: #8373e6;
+        font-size: 20px;
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%) scale(4);
+        border-radius: 50px;
+        padding: 3px;
+        transition: 0.2s;
+        pointer-events: none;
+        opacity: 0;
+      }
+
+      .radio-btn .amartya-icon {
+        width: 125px;
+        height: 110px;
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+      }
+
+    
+      .radio-btn .amartya-icon h3 {
+        color: #FF8000;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        font-weight: 650;
+        
+      }
+
+      .custom-radio input:checked + .radio-btn {
+        border: 3px solid #8373e6;
+      }
+
+      .custom-radio input:checked + .radio-btn > i {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+      }
+----------------next button1------------------
+
+#sec-1 {
+  background-color:white;
+  
+}
+#sec-2 {
+ background-color:white;
+}
+.scroll-down1 {
+  height: 50px;
+  width: 150px;
+  border: 2px solid orange;
+  position: absolute;
+  left: 45%;
+  bottom: 70px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down1::before,
+.scroll-down1::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 4px solid orange;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down1 1s ease-in-out infinite;
+}
+.scroll-down1::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down1 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down1 {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+----------------next button2-------------
+#sec-3 {
+  background-color:white;
+}
+#sec-4 {
+  background-color:white;
+}
+.scroll-down2 {
+  background-color:white;
+  height: 50px;
+  width: 150px;
+  border: 2px solid orange;
+  position: relative;
+  left: 45%;
+  bottom: 1780px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down2::before,
+.scroll-down2::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 4px solid orange;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down1 1s ease-in-out infinite;
+}
+.scroll-down2::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down2 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down2 {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+----------------next button3-------------
+#sec-3 {
+  background-color:white;
+}
+#sec-4 {
+  background-color:white;
+}
+.scroll-down3 {
+  height: 50px;
+  width: 150px;
+  border: 2px solid orange;
+  position: relative;
+  left: 45%;
+  bottom: 1290px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down3::before,
+.scroll-down3::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 4px solid orange;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down3 1s ease-in-out infinite;
+}
+.scroll-down3::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down3 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down3 {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+--------------------next button4-----------------------
+#sec-3 {
+  background-color:white;
+}
+#sec-4 {
+  background-color:white;
+}
+.scroll-down4 {
+  height: 50px;
+  width: 150px;
+  border: 2px solid orange;
+  position: relative;
+  left: 45%;
+  bottom: 780px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down4::before,
+.scroll-down4::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 4px solid orange;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down4 1s ease-in-out infinite;
+}
+.scroll-down4::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down4 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down4 {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+-------------------submit button------------------------
+#sec-4 {
+  background-color:white;
+}
+#sec-5 {
+  background-color:white;
+}
+.scroll-down5 {
+  height: 50px;
+  width: 150px;
+  border: none;
+  position: relative;
+  left: 45%;
+  bottom: 85px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color:Ff8000;
+  font-size:25px;
+  font-weight:bold;
+  background-color:orange;
+  font-family:"poppins";
+  color:white;
+  
+}
+.scroll-down5::before,
+.scroll-down5::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 4px solid orange;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down4 1s ease-in-out infinite;
+}
+.scroll-down5::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down5 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down5 {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+.scroll-down6 {
+  height: 50px;
+  width: 150px;
+  border: none;
+  position: relative;
+  left: 33.5%;
+  bottom: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color:Ff8000;
+  font-size:25px;
+  font-weight:bold;
+  background-color:black;
+  font-family:"poppins";
+  color:white;
+  text-align: center;
+}
+
